@@ -41,9 +41,22 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 
 <!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+boxplot(pushups~position,data=mydata)
+```
+
+The first quartile of the "Skill" players is bigger than the third quartile of the "Line" players.
+that based on what Dr.K told us that in these situations there will be statistical difference and that's what I think will I will observe.
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
+
+I observed that there are a total or 8 "LINE" players and 22 "SKILL" players. The average number of pushups that the "LINE" players can do is 17.125, while the "SKILL" players on average can do 49.72727 pushups.
 
 ## Inferential Results
 
